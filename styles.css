@@ -1,0 +1,56 @@
+body {
+    background-color: #000;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    background-color: #000;
+    padding: 10px;
+}
+
+.sidebar__navegation {
+    background-color: #121212;
+    /* background-color: green; */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.sidebar__navegation .logo {
+    /* background-color: red; */
+    display: flex;
+    border-radius: 8px;
+    padding: 10px 16px;
+    align-items: center;
+}
+
+.sidebar__navegation .logo img {
+    width: 80px;
+}
+
+.sidebar__navegation__menu {
+    background-color: #121212;
+    /* background-color: blue; */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.sidebar__navegation__menu ul li {
+    /* background-color: orange; */
+    padding: 10px 10px 5px 0;
+}
+
+.sidebar__navegation__menu ul li a {
+    /* background-color: purple; */
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.sidebar__navegation__menu .icone {
+    margin-right: 8px;
+}
