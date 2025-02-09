@@ -1,5 +1,5 @@
 <h1>Spotify Clone</h1>
-<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=UNDER%20CONSTRUCTION&color=GREEN&style=for-the-badge"/>
 <img loading="lazy" src="https://img.shields.io/github/stars/DanielSouza2005?style=social"/>
 
 <h2>About</h2>
