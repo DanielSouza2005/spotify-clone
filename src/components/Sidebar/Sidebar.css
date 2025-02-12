@@ -1,0 +1,14 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    background-color: var(--text-base-dark);
+    padding: 10px;
+}
+
+.sidebar__navegation {
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 8px;
+    padding: 10px 4px;
+}
