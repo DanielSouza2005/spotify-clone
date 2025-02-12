@@ -1,0 +1,11 @@
+.logo {
+    display: flex;
+    border-radius: 8px;
+    padding: 10px 16px;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    cursor: pointer;
+}
