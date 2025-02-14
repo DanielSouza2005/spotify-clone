@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import Logo from "../Logo";
 import logoImagem from "../../shared/assets/logo-spotify.png";
 import "./Sidebar.css";
 import SidebarNavigation from "./SidebarNavigation";
