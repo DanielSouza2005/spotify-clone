@@ -7,9 +7,12 @@
 
 <h2>🛠️ Technologies used </h2>
 <div>
-  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=black">
-  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=black">
+  <img src="https://img.shields.io/badge/HTML-orange?style=for-the-badge&logo=html5&logoColor=black">
+  <img src="https://img.shields.io/badge/CSS-lightblue?&style=for-the-badge&logo=css3&logoColor=black">
+  <img src="https://img.shields.io/badge/fontawesome-lightblue?style=for-the-badge&logo=fontawesome">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react">
+  <img src="https://img.shields.io/badge/typescript-white?style=for-the-badge&logo=typescript">  
 </div>
 
 <!--# :hammer: Funcionalidades do projeto
