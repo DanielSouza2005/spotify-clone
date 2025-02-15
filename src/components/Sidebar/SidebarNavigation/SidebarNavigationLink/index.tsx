@@ -1,21 +1,27 @@
+import "./SidebarNavegationLink.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
-import "./SidebarNavegationLink.css";
 
 interface SidebarNavegationLinkProps {
     icone: IconDefinition;
     texto: string;
+    estiloIcone?: string;
+    estiloTexto?: string;
 }
 
-const SidebarNavegationLink = ({ icone, texto } : SidebarNavegationLinkProps) => {
+const SidebarNavegationLink = ({ icone, texto, estiloIcone, estiloTexto } : SidebarNavegationLinkProps) => {
     return (
         <>
             <FontAwesomeIcon
                 icon={icone}
-                className="sidebar__navegation__menu__icone"
+                className={estiloIcone}
             />
 
-            <span className="sidebar__navegation__menu__texto">{texto}</span>
+            <span 
+                className={estiloTexto}
+            >
+                {texto}
+            </span>
         </>
     );
 }

@@ -1,0 +1,15 @@
+.sidebar__library {
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 8px;
+    padding: 10px 4px;
+    margin-top: 10px;
+}
+
+.sidebar__library__navegation {
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}

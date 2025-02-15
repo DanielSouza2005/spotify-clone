@@ -1,0 +1,24 @@
+.sidebar__library__yourLibrary {
+    padding: 10px 10px 10px 0;
+    color: var(--cor-fundo-terciaria);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar__library__yourLibrary__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar__library__yourLibrary__icone__plus {
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 16px;
+}

@@ -1,0 +1,13 @@
+.sidebar__navegation__menu__texto {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sidebar__library__navegation__texto {
+    font-size: 16px;
+}
+
+.sidebar__navegation__menu__icone {
+    margin-right: 12px;
+    font-weight: 900;
+}

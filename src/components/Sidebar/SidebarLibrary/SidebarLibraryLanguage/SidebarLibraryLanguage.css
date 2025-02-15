@@ -1,0 +1,24 @@
+.sidebar__navegation__language {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar__navegation__language button {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    border: 1px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: var(--text-base-light);
+    background-color: var(--text-base-dark);
+    color: var(--text-base-light);
+    padding: 6px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}

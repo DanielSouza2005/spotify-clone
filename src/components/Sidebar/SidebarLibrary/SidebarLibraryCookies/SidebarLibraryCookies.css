@@ -1,0 +1,17 @@
+.sidebar__navegation__cookies {
+    padding: 20px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__navegation__cookies a {
+    color: var(--cor-fundo-terciaria);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;    
+}
+
+.sidebar__navegation__cookies a:hover {
+    text-decoration: underline;  
+}
