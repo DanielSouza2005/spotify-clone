@@ -8,7 +8,7 @@
 .sidebar__navegation__language button {
     font-weight: 600;
     font-size: 14px;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-poppins);
     border: 1px;
     border-style: solid;
     border-radius: 30px;

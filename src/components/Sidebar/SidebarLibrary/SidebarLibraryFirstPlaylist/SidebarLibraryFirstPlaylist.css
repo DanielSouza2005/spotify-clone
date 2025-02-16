@@ -10,7 +10,7 @@
 .sidebar__navegation__first_playlist h1 {
     font-weight: 600;
     font-size: 14px;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-poppins);
     color: var(--text-base-light);
     padding: 8px 2px;
 }
@@ -18,7 +18,7 @@
 .sidebar__navegation__first_playlist h2 {
     font-weight: 400;
     font-size: 14px;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-poppins);
     color: var(--text-base-light);
     padding: 8px 2px;
 }

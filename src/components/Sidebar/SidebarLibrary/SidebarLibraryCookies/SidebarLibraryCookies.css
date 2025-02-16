@@ -7,7 +7,7 @@
 .sidebar__navegation__cookies a {
     color: var(--cor-fundo-terciaria);
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 14px;
     font-weight: 400;    
 }
