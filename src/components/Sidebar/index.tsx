@@ -6,7 +6,10 @@ import SiderbarLibrary from "./SidebarLibrary";
 
 const Sidebar = () => {
     return (
-        <div className="sidebar">
+        <div
+            className="sidebar"
+            id="sidebar"
+        >
             <nav className="sidebar__navegation">
                 <Logo
                     imagem={logoImagem}

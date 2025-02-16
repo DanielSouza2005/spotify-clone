@@ -34,3 +34,17 @@
   --font-dm-sans: "DM Sans", sans-serif;
   --font-poppins: "Poppins", sans-serif;
 }
+
+.main {
+  padding: 8px;
+  min-height: 99vh;
+  position: relative;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "sidebar content"
+    "footer footer";
+  overflow: hidden;
+}

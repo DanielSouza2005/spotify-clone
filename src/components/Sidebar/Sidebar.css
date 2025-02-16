@@ -1,14 +1,18 @@
 .sidebar {
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
     width: 300px;
     background-color: var(--text-base-dark);
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    grid-area: sidebar;
+    height: 100%; 
 }
 
 .sidebar__navegation {
     background-color: var(--cor-fundo-secundaria);
     border-radius: 8px;
     padding: 10px 4px;
+    grid-area: content;
 }

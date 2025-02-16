@@ -11,3 +11,18 @@
     width: 50%;
     cursor: pointer;
 }
+
+.footer__premium__button {
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 0;
+    border-radius: 9999px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    display: flex;
+    background-color: #FFF;
+    box-sizing: border-box;
+}

@@ -1,9 +1,14 @@
 import './App.css';
+import FooterPremium from './components/FooterPremium';
 import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <Sidebar />
+    <div className="main">
+      <Sidebar />
+
+      <FooterPremium />
+    </div>
   );
 }
 
