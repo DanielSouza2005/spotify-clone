@@ -26,3 +26,19 @@
     background-color: #FFF;
     box-sizing: border-box;
 }
+
+.header__navigation__container__buttonLeft {
+    margin-right: 1rem;
+}
+
+.header__navigation__container__buttonLeft, .header__navigation__container__buttonRight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    color: var(--bg-arrow-color);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}

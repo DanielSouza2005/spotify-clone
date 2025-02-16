@@ -1,0 +1,11 @@
+.content {
+    grid-area: content;
+    height: 100%;
+    background-color: var(--cor-fundo-secundaria);    
+    border-radius: 8px;
+}
+
+.main-container {
+    max-width: 80vw;
+    height: 100%;
+}

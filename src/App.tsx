@@ -1,4 +1,5 @@
 import './App.css';
+import ConteudoPrincipal from './components/ConteudoPrincipal';
 import FooterPremium from './components/FooterPremium';
 import Sidebar from './components/Sidebar';
 
@@ -7,7 +8,9 @@ function App() {
     <div className="main">
       <Sidebar />
 
-      <FooterPremium />
+      <ConteudoPrincipal />
+
+      <FooterPremium />      
     </div>
   );
 }
