@@ -1,5 +1,6 @@
 import Cabecalho from "./Cabecalho";
 import "./ConteudoPrincipal.css";
+import Playlists from "./Playlists";
 
 const ConteudoPrincipal = () => {
     return (
@@ -9,6 +10,8 @@ const ConteudoPrincipal = () => {
         >
             <div className="main-container">
                 <Cabecalho />
+
+                <Playlists />
             </div>
         </main>
     );
