@@ -3,7 +3,6 @@
     padding: 16px;
     margin: 10px;
     border-radius: 10px;
-    /* background-color: green; */
     background-color: var(--cor-fundo-secundaria)
 }
 
@@ -24,31 +23,36 @@
     margin-bottom: 26px;
 }
 
+.playlist__header__title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .offer__scroll__container {
-    /* background-color: blue; */
-    max-height: 43vh;
+    max-height: 50vh;
     margin: 24px 12px;
     overflow-y: auto;
 }
 
-.offer__scroll-container::-webkit-scrollbar {
+.offer__scroll__container::-webkit-scrollbar {
     width: 1px;
 }
 
-.offer__scroll-container::-webkit-scrollbar-thumb {
+.offer__scroll__container::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
-.offer__list-item {
+.offer__list__item {
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 16px;
     gap: 16px;
     margin-bottom: 16px;
 }
 
-.offer__list-item img {
+.offer__list__item img {
     position: absolute;
     right: 0;
     bottom: 0;

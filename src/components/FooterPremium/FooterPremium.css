@@ -3,16 +3,14 @@
     background-image: linear-gradient(90deg, #af2896, #509bf5);
     width: 100%;
     padding: 6px;
-    z-index: 999;
     opacity: 1;
     transition: opacity .3s ease-in;
     display: flex;
     max-width: 100%;
     flex-direction: column;
-    height: 80px;
+    min-height: 80px;
     border-radius: 8px;
     box-sizing: border-box;
-    margin: 0 0 10px 0;
     user-select: none;
     align-self: stretch;
     justify-content: center;
