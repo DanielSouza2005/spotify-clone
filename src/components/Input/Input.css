@@ -9,4 +9,6 @@
     outline: none;
     font-family: var(--font-poppins);
     font-size: 14px;
+    width: 100%;
+    padding-right: 16px;
 }

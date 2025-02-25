@@ -1,0 +1,58 @@
+.mostListenedPlaylists__container {
+    margin: 12px;
+    align-items: stretch !important;
+    display: flex !important;   
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+}
+
+.playlist__header__title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    margin: 12px 0;
+}
+
+.offer__scroll__container {
+    position: relative;
+    overflow-y: auto;
+}
+
+.offer__scroll__container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.offer__scroll__container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.offer__list__item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    margin-inline: -12px;
+    width: 100%;
+    height: auto;
+}
+
+/* @media screen and (max-width: 1140px) {
+    .offer__list__item {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 972px) {
+    .offer__list__item {
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .offer__list__item {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+} */

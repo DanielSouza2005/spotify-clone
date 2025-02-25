@@ -2,11 +2,11 @@ import './App.css';
 import ConteudoPrincipal from './components/ConteudoPrincipal';
 import FooterPremium from './components/FooterPremium';
 import Sidebar from './components/Sidebar';
-import { HomePlaylistsProvider } from './context/HomePlaylists';
+import { MostListenedPlaylistsProvider } from './context/MostListenedPlaylists';
 
 function App() {
   return (
-    <HomePlaylistsProvider>
+    <MostListenedPlaylistsProvider>
       <div className="main">
         <Sidebar />
 
@@ -14,7 +14,7 @@ function App() {
 
         <FooterPremium />
       </div>
-    </HomePlaylistsProvider>
+    </MostListenedPlaylistsProvider>
   );
 }
 

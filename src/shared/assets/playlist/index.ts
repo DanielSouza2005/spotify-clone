@@ -11,7 +11,7 @@ import foto10 from "./10.jpeg";
 import foto11 from "./11.jpeg";
 import foto12 from "./12.jpeg";
 
-export const HomePlaylistsImages = {
+export const MostListenedPlaylistsImages = {
     foto1,
     foto2,
     foto3,

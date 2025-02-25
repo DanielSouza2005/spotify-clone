@@ -57,12 +57,12 @@
 .header__login {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 12px;
-    width: 60vh;
 }
 
 .header__login__subscribe {
+    min-width: 130px;
     color: var(--text-sub);
     font-size: 16px;
     font-weight: 700;
@@ -73,7 +73,7 @@
 }
 
 .header__login__logar {
-    width: 100px;
+    min-width: 100px;
     height: 48px;
     color: var(--text-base-dark);
     font-size: 16px;

@@ -8,7 +8,7 @@ export interface iPlaylist {
     alt?: string;
 }
 
-export interface iHomePlaylistContextType {
-    homePlaylistsDataContext: iPlaylist[];
-    setHomePlaylistsDataContext: React.Dispatch<React.SetStateAction<iPlaylist[]>>
+export interface iMostListenedPlaylistContextType {
+    mostListenedPlaylistsDataContext: iPlaylist[];
+    setMostListenedPlaylistsDataContext: React.Dispatch<React.SetStateAction<iPlaylist[]>>
 }
