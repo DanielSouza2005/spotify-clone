@@ -1,6 +1,6 @@
 import "./MostListenedPlaylists.css";
 
-import { useMostListenedPlaylists } from "../../../../hooks/MostListenedPlaylists";
+import { useMostListenedPlaylists } from "../../../../hooks/useMostListenedPlaylists";
 import MostListenedPlaylistsItem from "../MostListenedPlaylistsItem";
 
 const MostListenedPlaylists = () => {

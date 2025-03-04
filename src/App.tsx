@@ -3,17 +3,22 @@ import ConteudoPrincipal from './components/ConteudoPrincipal';
 import FooterPremium from './components/FooterPremium';
 import Sidebar from './components/Sidebar';
 import { MostListenedPlaylistsProvider } from './context/MostListenedPlaylists';
+import { UserSearchProvider } from './context/UserSearch';
 
 function App() {
   return (
     <MostListenedPlaylistsProvider>
-      <div className="main">
-        <Sidebar />
+      <UserSearchProvider>
 
-        <ConteudoPrincipal />
+        <div className="main">
+          <Sidebar />
 
-        <FooterPremium />
-      </div>
+          <ConteudoPrincipal />
+
+          <FooterPremium />
+        </div>
+
+      </UserSearchProvider>
     </MostListenedPlaylistsProvider>
   );
 }

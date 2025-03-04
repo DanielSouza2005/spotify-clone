@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ChangeEvent, ReactNode } from "react";
 import "./Input.css";
 
 interface InputProps {
@@ -8,9 +8,11 @@ interface InputProps {
     placeholder?: string;
     children?: ReactNode;
     estilo?: string;
+    valor?: string;
+    aoDigitar?: (event: ChangeEvent<HTMLInputElement>) => void
 }
 
-const Input = ({ id, children, maxLength, placeholder, estilo, type = "text" }: InputProps) => {
+const Input = ({ id, children, maxLength, placeholder, estilo, valor, aoDigitar, type = "text" }: InputProps) => {
     return (
         <input
             id={id}
@@ -18,6 +20,9 @@ const Input = ({ id, children, maxLength, placeholder, estilo, type = "text" }: 
             type={type}
             placeholder={placeholder}
             className={estilo}
+            value={valor}
+            onChange={aoDigitar}            
+            autoComplete="off"
         >
             {children}
         </input>

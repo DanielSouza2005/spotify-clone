@@ -9,7 +9,7 @@ const HomePlaylists = () => {
 
     return (
         <div className="playlist-container">
-            <div 
+            <div
                 id="result-playlists"
                 className="result-playlists"
             >
