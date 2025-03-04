@@ -5,6 +5,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 100%;
+    height: 100%;
     overflow-y: auto;
 }
 
@@ -18,15 +19,13 @@
 
 .offer__scroll__container {
     position: relative;
+    height: 100%;
     overflow-y: auto;
 }
 
-.offer__scroll__container::-webkit-scrollbar {
-    width: 1px;
-}
-
-.offer__scroll__container::-webkit-scrollbar-thumb {
-    background-color: transparent;
+.offer__list {
+    position: relative;
+    height: 100%;
 }
 
 .offer__list__item {
@@ -34,7 +33,7 @@
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     margin-inline: -12px;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 /* @media screen and (max-width: 1140px) {

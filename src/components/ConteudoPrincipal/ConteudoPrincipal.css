@@ -8,4 +8,17 @@
 .main-container {
     max-width: 80vw;
     height: 100%;
+    overflow-y: auto;
+}
+
+.main-container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.result-playlists {
+    position: relative;
 }

@@ -3,6 +3,7 @@
     margin: 10px;
     border-radius: 10px;
     background-color: var(--cor-fundo-secundaria);
+    height: 100%;
 }
 
 .playlist__header {

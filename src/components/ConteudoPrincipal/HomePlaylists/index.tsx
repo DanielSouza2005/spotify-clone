@@ -9,14 +9,17 @@ const HomePlaylists = () => {
 
     return (
         <div className="playlist-container">
-            <div id="result-playlists">
+            <div 
+                id="result-playlists"
+                className="result-playlists"
+            >
                 <div className="playlist__header">
                     <h1
                         className="playlist__header__greeting"
                         id="greeting"
                     >
                         {saudacao}
-                    </h1>                    
+                    </h1>
                 </div>
 
                 <MostListenedPlaylists />
