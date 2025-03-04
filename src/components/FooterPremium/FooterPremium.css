@@ -1,6 +1,6 @@
 .footer__premium {
     grid-area: footer;
-    background-image: linear-gradient(90deg, #af2896, #509bf5);
+    background-image: var(--footer-gradient-color);
     width: 100%;
     padding: 6px;
     opacity: 1;
@@ -14,6 +14,7 @@
     user-select: none;
     align-self: stretch;
     justify-content: center;
+    overflow: hidden;
 }
 
 .footer__premium__container {
@@ -27,6 +28,7 @@
     justify-content: space-between;
     position: relative;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .footer__premium__container__text {
@@ -52,4 +54,24 @@
     padding: 8px 32px;
     height: 100%;
     position: relative;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer__premium__container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer__premium__container__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__premium__button__subscribe {
+        width: 100%;
+        max-width: 300px;
+        align-self: center;
+    }
 }

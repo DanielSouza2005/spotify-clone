@@ -23,7 +23,7 @@
     text-decoration: none;
     text-transform: none;
     display: flex;
-    background-color: #FFF;
+    background-color: var(--text-base-light);
     box-sizing: border-box;
 }
 

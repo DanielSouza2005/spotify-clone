@@ -8,7 +8,33 @@
     min-block-size: 48px;
     padding-block: 12px;
     padding-inline: 12px;
+}
+
+.cards:hover {
+    background-color: var(--card-hover-background-color);
+}
+
+.cards:hover .play {
+    opacity: 1;
+    transform: translateY(-20px);
     cursor: pointer;
+}
+
+.play {
+    position: absolute;
+    right: 0px;
+    top: 120px;
+    padding: 18px;
+    background-color: #3be477;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.fa__play__icon {
+    height: 20px;
+    width: 20px;
 }
 
 .cards__container {
@@ -35,8 +61,8 @@
     padding: 16px 0;
 }
 
-.cards__info__container span {    
-    color: #fff;
+.cards__info__container span {
+    color: var(--text-base-light);
     font-size: 1rem;
     font-weight: 400;
 }

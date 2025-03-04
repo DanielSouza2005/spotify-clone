@@ -9,6 +9,8 @@
   --bg-arrow-color: rgba(0, 0, 0, 7);
   --grid-gap: 24px;
   --column-count: 5;
+  --footer-gradient-color: linear-gradient(90deg, #af2896, #509bf5);
+  --card-hover-background-color: #252525;
 
   --cor-fundo-secundaria: #121212;
   --cor-fundo-terciaria: #b3b3b3;
@@ -39,6 +41,7 @@
 .main {
   padding: 8px;
   min-height: 100vh;
+  max-height: 100vh;
   position: relative;
   display: grid;
   box-sizing: border-box;

@@ -10,11 +10,11 @@
 }
 
 .playlist__header__title {
-    color: #fff;
+    color: var(--text-base-light);
     font-size: 24px;
     font-weight: 700;
     position: relative;
-    margin: 12px 0;
+    margin: 12px 0 12px 12px;
 }
 
 .offer__scroll__container {
@@ -31,7 +31,6 @@
 .offer__list__item {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    margin-inline: -12px;
     width: 100%;
     height: 100%;
 }

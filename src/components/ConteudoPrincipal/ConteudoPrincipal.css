@@ -1,8 +1,8 @@
 .content {
     grid-area: content;
-    height: 100%;
     background-color: var(--cor-fundo-secundaria);    
     border-radius: 8px;
+    overflow-y: auto;
 }
 
 .main-container {
