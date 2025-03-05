@@ -5,12 +5,14 @@ import MusicSection from "../MusicSection";
 import { usePesquisa } from "../../hooks/usePesquisa";
 import { useMostListenedPlaylists } from "../../hooks/useMostListenedPlaylists";
 import { useSaudacao } from "../../hooks/useSaudacao";
+import useRecommendedArtists from "../../hooks/useRecommendedArtists";
 
 const ConteudoPrincipal = () => {
 
     const saudacao = useSaudacao();
     const { userSearch, dataUserSearched, userSearchCarregando } = usePesquisa();
     const { mostListenedPlaylistsDataContext } = useMostListenedPlaylists();
+    const { artistsRecommended } = useRecommendedArtists();
 
     return (
         <main
@@ -49,12 +51,14 @@ const ConteudoPrincipal = () => {
                                     <MusicSection
                                         titulo="Playlists mais escutadas"
                                         itens={mostListenedPlaylistsDataContext}
+                                        mostraNotFoundResult={false}
                                     />
 
-                                    {/* <MusicSection
-                                        titulo="Playlists mais escutadas"
-                                        itens={mostListenedPlaylistsDataContext}
-                                    /> */}
+                                    <MusicSection
+                                        titulo="Artistas recomendados"
+                                        itens={artistsRecommended}
+                                        mostraNotFoundResult={false}
+                                    />
                                 </>
                         }
                     </div>

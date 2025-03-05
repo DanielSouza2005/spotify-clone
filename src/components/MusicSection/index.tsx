@@ -5,9 +5,10 @@ import MusicSectionItem from "./MusicSectionItem";
 interface MusicSectionProps {
     titulo: string;
     itens: iPlaylist[] | iArtist[];
+    mostraNotFoundResult?: boolean;
 }
 
-const MusicSection = ({ titulo, itens }: MusicSectionProps) => {
+const MusicSection = ({ titulo, itens, mostraNotFoundResult = true }: MusicSectionProps) => {
     return (
 
         <>
@@ -31,9 +32,12 @@ const MusicSection = ({ titulo, itens }: MusicSectionProps) => {
                         </div>
                     </div>
                     :
-                    <div className="MusicSection__container__notFound">
-                        <h2 className="MusicSection__title__notFound">Nenhum resultado encontrado :(</h2>
-                    </div>
+                    mostraNotFoundResult ?
+                        <div className="MusicSection__container__notFound">
+                            <h2 className="MusicSection__title__notFound">Nenhum resultado encontrado :(</h2>
+                        </div>
+                        :
+                        ""
             }
         </>
 

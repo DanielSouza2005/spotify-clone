@@ -3,21 +3,24 @@ import ConteudoPrincipal from './components/ConteudoPrincipal';
 import FooterPremium from './components/FooterPremium';
 import Sidebar from './components/Sidebar';
 import { MostListenedPlaylistsProvider } from './context/MostListenedPlaylists';
+import { RecommendedArtistsProvider } from './context/RecommendedArtists';
 import { UserSearchProvider } from './context/UserSearch';
 
 function App() {
   return (
     <MostListenedPlaylistsProvider>
       <UserSearchProvider>
+        <RecommendedArtistsProvider>
 
-        <div className="main">
-          <Sidebar />
+          <div className="main">
+            <Sidebar />
 
-          <ConteudoPrincipal />
+            <ConteudoPrincipal />
 
-          <FooterPremium />
-        </div>
-
+            <FooterPremium />
+          </div>
+          
+        </RecommendedArtistsProvider>
       </UserSearchProvider>
     </MostListenedPlaylistsProvider>
   );
