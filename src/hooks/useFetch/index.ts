@@ -12,7 +12,7 @@ function useFetch<T>(url: string, deveBuscar : boolean): FetchState<T> {
     const [erro, setErro] = useState<string | null>(null);
 
     useEffect(() => {
-        if (!url || !deveBuscar) return;
+        if (url === "" || !deveBuscar) return;
 
         const fetchData = async () => {
             setCarregando(true);

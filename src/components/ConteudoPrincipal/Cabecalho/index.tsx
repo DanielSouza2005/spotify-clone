@@ -14,7 +14,7 @@ const Cabecalho = () => {
     const { userSearch, setUserSearch, setDataUserSearched, setUserSearchCarregando, setUserSearchErro } = usePesquisa();
     const [deveBuscar, setDeveBuscar] = useState(false);
 
-    const { dado, carregando, erro } = useFetch<Artist[]>(`https://my-json-server.typicode.com/DanielSouza2005/spotify-clone-fakeapi/artists?name_like=${userSearch}`, deveBuscar);
+    const { dado, carregando, erro } = useFetch<iArtist[]>(`https://my-json-server.typicode.com/DanielSouza2005/spotify-clone-fakeapi/artists?name_like=${userSearch}`, deveBuscar);
 
     useEffect(() => {
         if (userSearch !== "" || dado) {

@@ -2,8 +2,8 @@ import React from "react";
 
 export interface iPlaylist {
     id: string;
-    nome: string;
-    foto?: string;
+    name: string;
+    urlImg?: string;
     estilo?: string;
     alt?: string;
 }

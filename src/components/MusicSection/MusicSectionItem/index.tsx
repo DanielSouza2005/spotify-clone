@@ -1,17 +1,17 @@
+import "./MusicSectionItem.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { iPlaylist } from "../../../../shared/interfaces/iPlaylists";
-import "./MostListenedPlaylistsItem.css";
+import { iPlaylist } from "../../../shared/interfaces/iPlaylists";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
-interface MostListenedPlaylistsProps {
-    playlistsData: iPlaylist
+interface MusicSectionItemProps {
+    data: iPlaylist | iArtist;
 }
 
-const MostListenedPlaylistsItem = ({ playlistsData }: MostListenedPlaylistsProps) => {
+const MusicSectionItem = ({ data }: MusicSectionItemProps) => {
     return (
         <div className="cards">
             <div className="cards__container">
-                <img src={playlistsData.foto} alt={playlistsData.alt} loading="lazy" />
+                <img src={data.urlImg} alt={data.alt ?? ""} loading="lazy" />
                 <div className="play">
                     <FontAwesomeIcon
                         icon={faPlay}
@@ -20,10 +20,10 @@ const MostListenedPlaylistsItem = ({ playlistsData }: MostListenedPlaylistsProps
                 </div>
             </div>
             <div className="cards__info__container">
-                <span>{playlistsData.nome}</span>
+                <span>{data.name}</span>
             </div>
         </div>
     );
 }
 
-export default MostListenedPlaylistsItem;
+export default MusicSectionItem;

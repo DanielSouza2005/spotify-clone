@@ -8,7 +8,7 @@ UserSearchContext.displayName = "Pesquisa do Usuário";
 export const UserSearchProvider = ({ children }: iChildren) => {
 
     const [userSearch, setUserSearch] = useState("");
-    const [dataUserSearched, setDataUserSearched] = useState<Artist[]>([]);
+    const [dataUserSearched, setDataUserSearched] = useState<iArtist[]>([]);
     const [userSearchCarregando, setUserSearchCarregando] = useState(false);
     const [userSearchErro, setUserSearchErro] = useState("");
 

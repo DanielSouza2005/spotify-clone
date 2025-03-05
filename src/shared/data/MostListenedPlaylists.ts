@@ -5,75 +5,75 @@ import { v4 as uuidv4 } from 'uuid';
 export const MostListenedPlaylistsData: iPlaylist[] = [
     {
         id: uuidv4(),
-        nome: "Boas festas",
-        foto: MostListenedPlaylistsImages.foto1,
+        name: "Boas festas",
+        urlImg: MostListenedPlaylistsImages.foto1,
         alt: "Boas festas"
     },
     {
         id: uuidv4(),
-        nome: "Feitos para você",
-        foto: MostListenedPlaylistsImages.foto2,
+        name: "Feitos para você",
+        urlImg: MostListenedPlaylistsImages.foto2,
         alt: "Feitos para você"
     },
     {
         id: uuidv4(),
-        nome: "Lançamentos",
-        foto: MostListenedPlaylistsImages.foto3,
+        name: "Lançamentos",
+        urlImg: MostListenedPlaylistsImages.foto3,
         alt: "Lançamentos"
     },
     {
         id: uuidv4(),
-        nome: "Rock",
-        foto: MostListenedPlaylistsImages.foto11,
+        name: "Rock",
+        urlImg: MostListenedPlaylistsImages.foto11,
         alt: "Rock"
     },
     {
         id: uuidv4(),
-        nome: "Para treinar",
-        foto: MostListenedPlaylistsImages.foto5,
+        name: "Para treinar",
+        urlImg: MostListenedPlaylistsImages.foto5,
         alt: "Para treinar"
     },
     {
         id: uuidv4(),
-        nome: "Podcasts",
-        foto: MostListenedPlaylistsImages.foto6,
+        name: "Podcasts",
+        urlImg: MostListenedPlaylistsImages.foto6,
         alt: "Podcasts"
     }
     ,
     // {
     //     id: uuidv4(),
-    //     nome: "Sertanejo",
-    //     foto: HomePlaylistsImages.foto7,
+    //     name: "Sertanejo",
+    //     urlImg: HomePlaylistsImages.foto7,
     //     alt: "Sertanejo"
     // },
     // {
     //     id: uuidv4(),
-    //     nome: "Samba e pagode",
-    //     foto: HomePlaylistsImages.foto8,
+    //     name: "Samba e pagode",
+    //     urlImg: HomePlaylistsImages.foto8,
     //     alt: "Samba e pagode"
     // },
     // {
     //     id: uuidv4(),
-    //     nome: "Funk",
-    //     foto: HomePlaylistsImages.foto9,
+    //     name: "Funk",
+    //     urlImg: HomePlaylistsImages.foto9,
     //     alt: "Funk"
     // },
     // {
     //     id: uuidv4(),
-    //     nome: "MPB",
-    //     foto: HomePlaylistsImages.foto10,
+    //     name: "MPB",
+    //     urlImg: HomePlaylistsImages.foto10,
     //     alt: "MPB"
     // },
     // {
     //     id: uuidv4(),
-    //     nome: "Rock",
-    //     foto: HomePlaylistsImages.foto11,
+    //     name: "Rock",
+    //     urlImg: HomePlaylistsImages.foto11,
     //     alt: "Rock"
     // },
     // {
     //     id: uuidv4(),
-    //     nome: "Hip Hop",
-    //     foto: HomePlaylistsImages.foto12,
+    //     name: "Hip Hop",
+    //     urlImg: HomePlaylistsImages.foto12,
     //     alt: "Hip Hop"
     // }
 ];

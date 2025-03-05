@@ -1,7 +1,7 @@
-.mostListenedPlaylists__container {
+.MusicSection__container {
     margin: 12px;
     align-items: stretch !important;
-    display: flex !important;   
+    display: flex !important;
     flex-direction: column;
     width: 100%;
     max-width: 100%;
@@ -9,10 +9,28 @@
     overflow-y: auto;
 }
 
-.playlist__header__title {
+.MusicSection__container__notFound {
+    margin: 12px;
+    align-items: stretch !important;
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.MusicSection__title {
     color: var(--text-base-light);
     font-size: 24px;
     font-weight: 700;
+    position: relative;
+    margin: 12px 0 12px 12px;
+}
+
+.MusicSection__title__notFound {
+    color: var(--text-base-light);
+    font-size: 16px;
+    font-weight: 500;
     position: relative;
     margin: 12px 0 12px 12px;
 }
