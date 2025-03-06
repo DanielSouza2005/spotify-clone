@@ -1,6 +1,7 @@
 import "./MusicSection.css";
-import { iPlaylist } from "../../shared/interfaces/iPlaylists";
 import MusicSectionItem from "./MusicSectionItem";
+import { iPlaylist } from "../../shared/interfaces/iPlaylists";
+import { iArtist } from "../../shared/interfaces/iArtist";
 import { iUserSearchDataCombined } from "../../shared/interfaces/iUserSearch";
 
 interface MusicSectionProps {

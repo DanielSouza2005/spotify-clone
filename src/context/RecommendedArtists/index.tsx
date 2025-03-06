@@ -2,6 +2,8 @@ import { createContext, useEffect, useState } from "react";
 import { iChildren } from "../../shared/interfaces/iChildren";
 import useFetch from "../../hooks/useFetch";
 
+import { iArtist, iArtistRecommendedContext } from "../../shared/interfaces/iArtist";
+
 export const RecommendedArtistsContext = createContext<iArtistRecommendedContext | undefined>(undefined);
 RecommendedArtistsContext.displayName = "Artistas Recomendados";
 

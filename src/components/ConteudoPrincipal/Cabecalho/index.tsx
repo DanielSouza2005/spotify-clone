@@ -1,7 +1,9 @@
 import "./Cabecalho.css";
 import Botao from "../../Botao";
 import Input from "../../Input";
+
 import { iPlaylist } from "../../../shared/interfaces/iPlaylists";
+import { iArtist } from "../../../shared/interfaces/iArtist";
 
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -48,12 +50,12 @@ const Cabecalho = () => {
     }, [artists, playlists, carregandoArtists, carregandoPlaylists, erroArtists, erroPlaylists,
         setDataUserSearched, setUserSearchCarregando, setUserSearchErro]);
 
-    // Handlers
+    //Controladores de comportamento
     const aoDigitarPesquisa = (evento: ChangeEvent<HTMLInputElement>) => {
         setTextoDigitado(evento.target.value);
     }
 
-    const aoPesquisar = (evento: FormEvent<HTMLFormElement>) => {
+    const aoPesquisar = (evento: FormEvent<HTMLFormElement> | React.MouseEvent<SVGSVGElement, MouseEvent>) => {
         evento.preventDefault();
         setUserSearch(textoDigitado);
 
@@ -82,6 +84,7 @@ const Cabecalho = () => {
                         <FontAwesomeIcon
                             className="header__navigation__search__icon"
                             icon={faSearch}
+                            onClick={(evento) => aoPesquisar(evento)}
                         />
 
                         <form

@@ -23,10 +23,7 @@ const ConteudoPrincipal = () => {
                 <Cabecalho />
 
                 <div className="playlist-container">
-                    <div
-                        id="result-playlists"
-                        className="result-playlists"
-                    >
+                    <div className="result-playlists">
                         <div className="playlist__header">
                             <h1
                                 className="playlist__header__greeting"

@@ -1,3 +1,4 @@
+import { iArtist } from "./iArtist";
 import { iPlaylist } from "./iPlaylists";
 
 export interface iUserSearchDataCombined {
