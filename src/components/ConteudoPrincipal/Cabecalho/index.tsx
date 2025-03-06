@@ -1,38 +1,54 @@
 import "./Cabecalho.css";
 import Botao from "../../Botao";
 import Input from "../../Input";
+import { iPlaylist } from "../../../shared/interfaces/iPlaylists";
 
+import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight, faSearch } from "@fortawesome/free-solid-svg-icons";
-import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { usePesquisa } from "../../../hooks/usePesquisa";
 import useFetch from "../../../hooks/useFetch";
 
 const Cabecalho = () => {
 
+    //Estados Locais
     const [textoDigitado, setTextoDigitado] = useState("");
-    const { userSearch, setUserSearch, setDataUserSearched, setUserSearchCarregando, setUserSearchErro } = usePesquisa();
     const [deveBuscar, setDeveBuscar] = useState(false);
 
-    const { dado, carregando, erro } = useFetch<iArtist[]>(`https://my-json-server.typicode.com/DanielSouza2005/spotify-clone-fakeapi/artists?name_like=${userSearch}`, deveBuscar);
+    //Custom Hooks
+    const { userSearch, setUserSearch, setDataUserSearched, setUserSearchCarregando, setUserSearchErro } = usePesquisa();
+    const { dado: artists, carregando: carregandoArtists, erro: erroArtists } = useFetch<iArtist[]>(
+        `https://my-json-server.typicode.com/DanielSouza2005/spotify-clone-fakeapi/artists?name_like=${userSearch}`,
+        deveBuscar);
+    const { dado: playlists, carregando: carregandoPlaylists, erro: erroPlaylists } = useFetch<iPlaylist[]>(
+        `https://my-json-server.typicode.com/DanielSouza2005/spotify-clone-fakeapi/playlists?name_like=${userSearch}`,
+        deveBuscar);
 
+    //Efeito para monitorar mudanças na pesquisa
     useEffect(() => {
-        if (userSearch !== "" || dado) {
+        if (userSearch !== "" || artists || playlists) {
             setDeveBuscar(true);
         }
-    }, [userSearch, dado]);
+    }, [userSearch, artists, playlists]);
 
+    //Efeito para atualizar os dados da pesquisa
     useEffect(() => {
-        setDataUserSearched(dado ?? []);
-        setUserSearchCarregando(carregando);
-        setUserSearchErro(erro ?? "");
+        const dadosPesquisados = {
+            artistas: artists ?? [],
+            playlists: playlists ?? []
+        };
 
-        if (dado) {
+        setDataUserSearched(dadosPesquisados ?? []);
+        setUserSearchCarregando(carregandoArtists || carregandoPlaylists);
+        setUserSearchErro(erroArtists || erroPlaylists || "");
+
+        if (artists && playlists) {
             setDeveBuscar(false);
         }
-    }, [dado, carregando, erro, 
+    }, [artists, playlists, carregandoArtists, carregandoPlaylists, erroArtists, erroPlaylists,
         setDataUserSearched, setUserSearchCarregando, setUserSearchErro]);
 
+    // Handlers
     const aoDigitarPesquisa = (evento: ChangeEvent<HTMLInputElement>) => {
         setTextoDigitado(evento.target.value);
     }

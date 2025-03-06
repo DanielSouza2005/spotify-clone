@@ -42,8 +42,8 @@ const ConteudoPrincipal = () => {
                                     <>
                                     </>
                                     :
-                                    < MusicSection
-                                        titulo="Artistas encontrados"
+                                    <MusicSection
+                                        titulo="Resultados encontrados"
                                         itens={dataUserSearched}
                                     />
                                 :
