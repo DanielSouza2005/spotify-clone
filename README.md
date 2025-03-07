@@ -5,7 +5,7 @@
 <h2>💡 About</h2>
 <p>Project made during Alura's Front-End Immersion to review and practice HTML, CSS, and JavaScript skills.</p>
 
-<h2>🛠️ Technologies used </h2>
+<h2>🖥️ Technologies used </h2>
 <div align="left" dir="auto">
   <a href="https://skillicons.dev" rel="nofollow">
     <img src="https://skillicons.dev/icons?i=html,css,javascript,react,typescript" style="max-width: 100%;">
@@ -13,9 +13,15 @@
   <br>
 </div>
 
-<!--# :hammer: Funcionalidades do projeto
+<h2>🛠️ Project Features </h2>
 
-- `Funcionalidade 1`: descrição da funcionalidade 1
-- `Funcionalidade 2`: descrição da funcionalidade 2
-- `Funcionalidade 2a`: descrição da funcionalidade 2a relacionada à funcionalidade 2
-- `Funcionalidade 3`: descrição da funcionalidade 3 -->
+- 🎨 `Icons`: Used FontAwesome icons.
+- 🧩 `Data`: The playlists and artists data are from a fake API with Json Server.
+  
+<h2>🔮 Future Features </h2>
+
+- 🌎 `Multilanguage`: Add more languages to the project.
+- 🔒 `Login`: Make a login page.
+- 🔊 `Player`: Make the player section to listen to the musics.
+- ⚙️ `API`: Consume Spotify's oficial API.
+- 🔄 `FullStack`: Turn this project into a fullstack project.
