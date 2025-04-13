@@ -2,10 +2,10 @@
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=UNDER%20CONSTRUCTION&color=GREEN&style=for-the-badge"/> 
 <img loading="lazy" src="https://img.shields.io/github/stars/DanielSouza2005?style=social"/>
 
-<h2>💡 About</h2>
-<p>Project made during Alura's Front-End Immersion to review and practice HTML, CSS, and JavaScript skills.</p>
+<h2>💡 Sobre </h2>
+<p>Projeto desenvolvido durante a Imersão Front-End da Alura para revisar e praticar habilidades em HTML, CSS e JavaScript.</p>
 
-<h2>🖥️ Technologies used </h2>
+<h2>🖥️ Tecnologias utilizadas </h2>
 <div align="left" dir="auto">
   <a href="https://skillicons.dev" rel="nofollow">
     <img src="https://skillicons.dev/icons?i=html,css,javascript,react,typescript" style="max-width: 100%;">
@@ -13,15 +13,17 @@
   <br>
 </div>
 
-<h2>🛠️ Project Features </h2>
+<h2>🛠️ Funcionalidades do Projeto </h2>
 
-- 🎨 `Icons`: Used FontAwesome icons.
-- 🧩 `Data`: The playlists and artists data are from a fake API with Json Server.
+- 🎨 `Ícones`: Ícones utilizados a partir do FontAwesome.
+- 🧩 `Dados`:  Os dados das playlists e dos artistas são provenientes de uma API fake com Json Server (por enquanto).
+- 📁 `Componentização`: Componentes reutilizáveis para facilitar manutenção e escalabilidade.
+- 🌗 `Modo Escuro`: Visual com tema escuro inspirado no layout oficial do Spotify.
   
-<h2>🔮 Future Features </h2>
+<h2>🔮 Funcionalidades Futuras </h2>
 
-- 🌎 `Multilanguage`: Add more languages to the project.
-- 🔒 `Login`: Make a login page.
-- 🔊 `Player`: Make the player section to listen to the musics.
-- ⚙️ `API`: Consume Spotify's oficial API.
-- 🔄 `FullStack`: Turn this project into a fullstack project.
+- 🌎 `Multilíngue`: Adicionar suporte a múltiplos idiomas no projeto.
+- 🔒 `Login`: Criar uma página de login.
+- 🔊 `Player`: Desenvolver a seção do player para tocar as músicas.
+- ⚙️ `API`: Consumir a API oficial do Spotify.
+- 🔄 `FullStack`: Transformar este projeto em um projeto fullstack.
