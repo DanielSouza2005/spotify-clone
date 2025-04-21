@@ -1,6 +1,6 @@
 <h1>🎵 Spotify Clone</h1>
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=UNDER%20CONSTRUCTION&color=GREEN&style=for-the-badge"/> 
-<img loading="lazy" src="https://img.shields.io/github/stars/DanielSouza2005?style=social"/>
+<img loading="lazy" src="https://img.shields.io/github/stars/DanielSouza2005/spotify-clone?style=social"/>
 
 <h2>💡 Sobre </h2>
 <p>Projeto desenvolvido durante a Imersão Front-End da Alura para revisar e praticar habilidades em HTML, CSS e JavaScript.</p>
